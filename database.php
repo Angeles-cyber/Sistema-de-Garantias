@@ -1,10 +1,11 @@
 <?php
 class Database {
     public static function conectar() {
-        $host = "localhost";
-        $user = "root";
-        $pass = ""; // pon aquí tu contraseña si tienes
-        $dbname = "garantias_db";
+        // Leer configuración desde variables de entorno para no exponer credenciales
+        $host = getenv('DB_HOST') ?: 'localhost';
+        $user = getenv('DB_USER') ?: 'root';
+        $pass = getenv('DB_PASS') ?: '';
+        $dbname = getenv('DB_NAME') ?: 'garantias_db';
 
         $conn = new mysqli($host, $user, $pass, $dbname);
 

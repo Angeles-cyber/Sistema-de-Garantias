@@ -54,6 +54,4 @@
         header('Location: vista/crear.php');
         exit;
     }
-    ?>
-</body>
-</html>
+    

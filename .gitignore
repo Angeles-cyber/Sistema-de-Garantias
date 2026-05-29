@@ -1,0 +1,10 @@
+vendor/
+.env
+/*.sql
+/.env.local
+node_modules/
+*.log
+composer.lock
+uploads/
+/*.sqlite
+backups/

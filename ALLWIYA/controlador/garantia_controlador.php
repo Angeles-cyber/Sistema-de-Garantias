@@ -19,14 +19,14 @@ class GarantiaController {
 
     public function guardar() {
     if (!empty($_POST)) {
-        var_dump($_POST); // <-- TEMPORAL para depuración
         $this->modelo->guardar(
             $_POST['producto'], 
             $_POST['entidad'], 
             $_POST['descripcion'], 
             $_POST['contacto'], 
             $_POST['TecCargo'], 
-            $_POST['fecha']
+            $_POST['fecha'],
+            isset($_POST['correo_entidad']) ? $_POST['correo_entidad'] : null
         );
         header('Location: indexall.php');
         exit();

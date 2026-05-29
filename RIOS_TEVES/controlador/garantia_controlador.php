@@ -19,7 +19,6 @@ class GarantiaController {
 
     public function guardar() {
     if (!empty($_POST)) {
-        var_dump($_POST); // <-- TEMPORAL para depuración
         $this->modelo->guardar(
             $_POST['producto'], 
             $_POST['entidad'], 

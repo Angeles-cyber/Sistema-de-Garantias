@@ -1,7 +1,12 @@
 <?php
-// Mostrar errores en desarrollo
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// Control de errores según entorno (APP_ENV=development o APP_DEBUG=1)
+if (getenv('APP_ENV') === 'development' || getenv('APP_DEBUG') === '1') {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
 
 // Incluir controlador
 require_once __DIR__ . '/controlador/garantia_controlador.php';
