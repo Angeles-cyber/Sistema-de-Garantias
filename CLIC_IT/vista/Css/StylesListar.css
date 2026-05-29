@@ -1,0 +1,77 @@
+        body {
+            background: #0f0f0f url('../../Img/clic.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        .containerlis {
+            max-width: 95%;
+            margin: 60px auto;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #1e90ff;
+            overflow-x: auto;
+        }
+
+        .containerlis h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #1e90ff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .acciones {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn.editar {
+            background-color: #1e90ff;
+        }
+
+        .btn.eliminar {
+            background-color: #ff4444;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
